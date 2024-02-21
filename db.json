@@ -1,0 +1,181 @@
+{
+  "tests": [
+    {
+      "title": "Тестовое название",
+      "questions": [
+        {
+          "id": "q0",
+          "point": 5,
+          "type": 1,
+          "text": "Тестовый вопрос",
+          "variants": [
+            {
+              "id": "v01",
+              "text": "Тестовый вариант 1",
+              "is_correct": false
+            },
+            {
+              "id": "v02",
+              "text": "Тестовый вариант 2",
+              "is_correct": false
+            },
+            {
+              "id": "v03",
+              "text": "Тестовый вариант 3",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": "q1",
+          "point": 5,
+          "type": 1,
+          "text": "Тестовый вопрос",
+          "variants": [
+            {
+              "id": "v1",
+              "text": "Тестовый вариант 1",
+              "is_correct": false
+            },
+            {
+              "id": "v2",
+              "text": "Тестовый вариант 2",
+              "is_correct": false
+            },
+            {
+              "id": "v3",
+              "text": "Тестовый вариант 3",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "point": 3,
+          "type": 0,
+          "text": "Тестовый вопрос 2",
+          "variants": [
+            {
+              "id": "v1.1",
+              "text": "Тестовый вариант 1.1",
+              "is_correct": true
+            },
+            {
+              "id": "v2.1",
+              "text": "Тестовый вариант 2.1",
+              "is_correct": false
+            },
+            {
+              "id": "v3.1",
+              "text": "Тестовый вариант 3.1",
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "id": "e67d"
+    }
+  ],
+  "replies": [
+    {
+      "test_id": "t1",
+      "user_id": "u1",
+      "mark": 5,
+      "date": "2024.02.19 00:00",
+      "is_completed": false,
+      "answers": [
+        {
+          "id": "a1",
+          "question_variant_id": "v3"
+        }
+      ],
+      "id": "6d67"
+    },
+    {
+      "id": "06e1",
+      "test_id": "e67d",
+      "user_id": "d045",
+      "is_completed": false,
+      "created_at": "20.02.2024, 00:12:32",
+      "upadtes_at": "20.02.2024, 00:12:32",
+      "answers": [
+        {
+          "id": "121",
+          "question_variant_id": "v1"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v2"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v3"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v1.1"
+        }
+      ],
+      "updated_at": "20.02.2024, 01:42:45",
+      "mark": 0
+    },
+    {
+      "id": "9b18",
+      "test_id": "e67d",
+      "user_id": "d045",
+      "is_completed": false,
+      "created_at": "20.02.2024, 00:12:32",
+      "upadtes_at": "20.02.2024, 00:12:32"
+    },
+    {
+      "id": "8499",
+      "test_id": "e67d",
+      "user_id": "d045",
+      "is_completed": false,
+      "created_at": "20.02.2024, 01:56:49",
+      "upadtes_at": "20.02.2024, 01:56:49",
+      "answers": [
+        {
+          "id": "121",
+          "question_variant_id": "v1.1"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v1"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v3"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v01"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v03"
+        }
+      ],
+      "updated_at": "20.02.2024, 01:58:41",
+      "mark": 3
+    },
+    {
+      "id": "d6b7",
+      "test_id": "e67d",
+      "user_id": "d045",
+      "is_completed": false,
+      "created_at": "20.02.2024, 01:56:49",
+      "upadtes_at": "20.02.2024, 01:56:49"
+    }
+  ],
+  "users": [
+    {
+      "name": "Тестовый юзер",
+      "id": "89c0"
+    },
+    {
+      "id": "9a3c",
+      "name": "Bdfy"
+    }
+  ]
+}
