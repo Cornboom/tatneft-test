@@ -7,5 +7,6 @@ export const Test = styled.div`
   flex-direction: column;
   gap: 2rem;
   margin-top: 5rem;
+  padding-bottom: 5rem;
   width: 80%;
 `;

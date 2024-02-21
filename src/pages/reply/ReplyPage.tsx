@@ -115,7 +115,7 @@ const ReplyPage = () => {
 
     return (
         <Test>
-            <Box sx={{ width: '100%' }}>
+            <Box sx={{ width: '100%', position: 'sticky', top: '10px' }}>
                 <LinearProgress variant="determinate" value={progress} color={progressBarColor(progress)} />
             </Box>
             <PageSubheader>
