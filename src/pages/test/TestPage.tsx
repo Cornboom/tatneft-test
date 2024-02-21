@@ -1,8 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import api from "../../api.ts";
-import { getUser } from "../../localStorageManager.ts";
+
+import api from "../../api/api.ts";
+import { getUser } from "../../utils/localStorageManager.ts";
 
 const TestPage = () => {
     const { testId } = useParams();
@@ -18,7 +19,7 @@ const TestPage = () => {
                 user_id: userData.id,
                 is_completed: false,
                 created_at: currentDate,
-                upadtes_at: currentDate,
+                updates_at: currentDate,
             }).then((resp) => {
                 navigate(`/reply/${resp.data.id}`)
             })

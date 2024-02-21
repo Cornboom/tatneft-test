@@ -1,4 +1,4 @@
-import { User, Test, Reply } from "./types";
+import { User, Test, Reply } from "../types/types";
 
 const USER_KEY = "TEST_CREATOR_USER";
 const REPLIES_KEY = "TEST_CREATOR_REPLIES";

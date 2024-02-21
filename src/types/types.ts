@@ -16,7 +16,7 @@ export type Reply = {
     answers: Answer[]
     is_completed: boolean,
     created_at: string,
-    upadtes_at: string,
+    updates_at: string,
 }
 
 export enum QuestionType {

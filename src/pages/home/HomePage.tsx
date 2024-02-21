@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import api from '../../api.ts';
-import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../../store";
-import { setReplies, setUser, setTests } from '../../reducers/userReducer.ts'
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import { FormControl, InputLabel, Input, Button, Box } from "@mui/material";
-import { PageSubheader, Text } from '../../globalStyles/textStyles.ts';
+
+import api from '../../api/api.ts';
+import { RootState } from "../../store/store";
+import { setReplies, setUser, setTests } from '../../store/reducers/userReducer.ts'
+
+import { PageSubheader, Text } from '../../styles/textStyles.ts';
 import { Form, TestsWrapper } from './styled.ts';
 
 

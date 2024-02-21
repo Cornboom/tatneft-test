@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import { Reply, Test } from '../types'
-import { updateReply } from '../localStorageManager.ts'
+import { Reply, Test } from '../../types/types'
+import { updateReply } from '../../utils/localStorageManager.ts'
 
 export interface TestState {
     test: Test | null,

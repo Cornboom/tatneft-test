@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import { User, Reply, Test } from '../types'
-import { getUser, setUser as setLocalUser, setReplies as setLocalReplies } from "../localStorageManager.ts";
+import { User, Reply, Test } from '../../types/types'
+import { getUser, setUser as setLocalUser, setReplies as setLocalReplies } from "../../utils/localStorageManager.ts";
 
 export interface UserState {
     user: User | null,

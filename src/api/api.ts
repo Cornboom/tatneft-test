@@ -1,5 +1,5 @@
 import axios, { AxiosPromise, AxiosRequestConfig, Method } from "axios";
-import { User, Test, Reply } from "./types";
+import { User, Test, Reply } from "../types/types";
 
 type FetchApiProps<Body> = {
     url: string,

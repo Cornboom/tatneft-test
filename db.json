@@ -97,7 +97,7 @@
       "user_id": "d045",
       "is_completed": false,
       "created_at": "20.02.2024, 00:12:32",
-      "upadtes_at": "20.02.2024, 00:12:32",
+      "updates_at": "20.02.2024, 00:12:32",
       "answers": [
         {
           "id": "121",
@@ -125,7 +125,7 @@
       "user_id": "d045",
       "is_completed": false,
       "created_at": "20.02.2024, 00:12:32",
-      "upadtes_at": "20.02.2024, 00:12:32"
+      "updates_at": "20.02.2024, 00:12:32"
     },
     {
       "id": "8499",
@@ -133,7 +133,7 @@
       "user_id": "d045",
       "is_completed": false,
       "created_at": "20.02.2024, 01:56:49",
-      "upadtes_at": "20.02.2024, 01:56:49",
+      "updates_at": "20.02.2024, 01:56:49",
       "answers": [
         {
           "id": "121",
@@ -165,7 +165,7 @@
       "user_id": "d045",
       "is_completed": false,
       "created_at": "20.02.2024, 01:56:49",
-      "upadtes_at": "20.02.2024, 01:56:49"
+      "updates_at": "20.02.2024, 01:56:49"
     }
   ],
   "users": [

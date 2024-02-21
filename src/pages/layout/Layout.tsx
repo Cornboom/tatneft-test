@@ -1,7 +1,8 @@
-import { Link, Outlet } from "react-router-dom";
-import { Container } from './styled.ts';
 import React from 'react';
-import { Header } from '../../globalStyles/header.ts';
+import { Link, Outlet } from "react-router-dom";
+
+import { Header } from '../../styles/header.ts';
+import { Container } from './styled.ts';
 
 const Layout = () => {
     return (
