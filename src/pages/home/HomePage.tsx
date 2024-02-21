@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { FormControl, InputLabel, Input, Button, Box } from "@mui/material";
+import { FormControl, InputLabel, Input, Button } from "@mui/material";
 
 import api from '../../api/api.ts';
 import { RootState } from "../../store/store";
