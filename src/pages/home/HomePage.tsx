@@ -72,13 +72,30 @@ const HomePage = () => {
                     <Text>
                         Реплаи
                     </Text>
-                    {replies.map((reply) => (
-                        <div key={reply.id}>
-                            <Link to={`/test/${reply.id}`}>
-                                {reply.test_id}
-                            </Link>
-                        </div>
-                    ))}
+                    {replies.map((reply) => {
+                        const testName = tests.find((test) => test.id === reply.test_id)?.title;
+
+                        return(
+                            <div key={reply.id}>
+                                <Link to={`/reply/${reply.id}`}>
+                                    <>
+                                        {testName}
+                                        <br/>
+                                        Дата прохождения {reply.updates_at}
+                                    </>
+                                    {reply.is_completed && typeof reply.mark !== "undefined" ? (
+                                        <div>
+                                            Ваши баллы: {reply.mark}
+                                        </div>
+                                    ) : (
+                                        <div>
+                                            В процессе
+                                        </div>
+                                    )}
+                                </Link>
+                            </div>
+                        )
+                    })}
                 </TestsWrapper>
             )}
             {tests.length > 0 && (

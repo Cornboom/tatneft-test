@@ -78,27 +78,41 @@
   ],
   "replies": [
     {
-      "test_id": "t1",
-      "user_id": "u1",
-      "mark": 5,
-      "date": "2024.02.19 00:00",
-      "is_completed": false,
+      "id": "4bb9",
+      "test_id": "e67d",
+      "user_id": "9a3c",
+      "is_completed": true,
+      "created_at": "21.02.2024, 20:44:45",
+      "updates_at": "21.02.2024, 20:44:45",
       "answers": [
         {
-          "id": "a1",
-          "question_variant_id": "v3"
+          "id": "121",
+          "question_variant_id": "v01"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v2"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v3.1"
         }
       ],
-      "id": "6d67"
+      "updated_at": "21.02.2024, 20:51:11",
+      "mark": 0
     },
     {
-      "id": "06e1",
+      "id": "3f7b",
       "test_id": "e67d",
-      "user_id": "d045",
-      "is_completed": false,
-      "created_at": "20.02.2024, 00:12:32",
-      "updates_at": "20.02.2024, 00:12:32",
+      "user_id": "9a3c",
+      "is_completed": true,
+      "created_at": "21.02.2024, 20:57:38",
+      "updates_at": "21.02.2024, 20:57:38",
       "answers": [
+        {
+          "id": "121",
+          "question_variant_id": "v1.1"
+        },
         {
           "id": "121",
           "question_variant_id": "v1"
@@ -109,63 +123,47 @@
         },
         {
           "id": "121",
-          "question_variant_id": "v3"
-        },
-        {
-          "id": "121",
-          "question_variant_id": "v1.1"
-        }
-      ],
-      "updated_at": "20.02.2024, 01:42:45",
-      "mark": 0
-    },
-    {
-      "id": "9b18",
-      "test_id": "e67d",
-      "user_id": "d045",
-      "is_completed": false,
-      "created_at": "20.02.2024, 00:12:32",
-      "updates_at": "20.02.2024, 00:12:32"
-    },
-    {
-      "id": "8499",
-      "test_id": "e67d",
-      "user_id": "d045",
-      "is_completed": false,
-      "created_at": "20.02.2024, 01:56:49",
-      "updates_at": "20.02.2024, 01:56:49",
-      "answers": [
-        {
-          "id": "121",
-          "question_variant_id": "v1.1"
-        },
-        {
-          "id": "121",
-          "question_variant_id": "v1"
-        },
-        {
-          "id": "121",
-          "question_variant_id": "v3"
-        },
-        {
-          "id": "121",
-          "question_variant_id": "v01"
+          "question_variant_id": "v02"
         },
         {
           "id": "121",
           "question_variant_id": "v03"
         }
       ],
-      "updated_at": "20.02.2024, 01:58:41",
+      "updated_at": "21.02.2024, 20:57:52",
       "mark": 3
     },
     {
-      "id": "d6b7",
+      "id": "b735",
       "test_id": "e67d",
-      "user_id": "d045",
+      "user_id": "9a3c",
       "is_completed": false,
-      "created_at": "20.02.2024, 01:56:49",
-      "updates_at": "20.02.2024, 01:56:49"
+      "created_at": "21.02.2024, 20:59:04",
+      "updates_at": "21.02.2024, 20:59:04"
+    },
+    {
+      "id": "56f0",
+      "test_id": "e67d",
+      "user_id": "9a3c",
+      "is_completed": true,
+      "created_at": "21.02.2024, 21:10:59",
+      "updates_at": "21.02.2024, 21:10:59",
+      "answers": [
+        {
+          "id": "121",
+          "question_variant_id": "v3.1"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v3"
+        },
+        {
+          "id": "121",
+          "question_variant_id": "v02"
+        }
+      ],
+      "updated_at": "21.02.2024, 21:11:11",
+      "mark": 5
     }
   ],
   "users": [

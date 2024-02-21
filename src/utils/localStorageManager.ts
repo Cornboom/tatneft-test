@@ -3,6 +3,8 @@ import { User, Test, Reply } from "../types/types";
 const USER_KEY = "TEST_CREATOR_USER";
 const REPLIES_KEY = "TEST_CREATOR_REPLIES";
 
+// функции для работы с localStorage
+
 export const getUser = (): User | null => {
     const rawUser = localStorage.getItem(USER_KEY);
 

@@ -15,7 +15,7 @@ const initialState: UserState = {
     tests: [],
 }
 
-export const userSilce = createSlice({
+export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
@@ -33,6 +33,6 @@ export const userSilce = createSlice({
   },
 })
 
-export const { setUser, setReplies, setTests } = userSilce.actions
+export const { setUser, setReplies, setTests } = userSlice.actions
 
-export default userSilce.reducer
+export default userSlice.reducer

@@ -20,8 +20,11 @@ export const testSlice = createSlice({
     setTest: (state, action: PayloadAction<Test>) => {
       state.test = action.payload;
     },
-    setReply: (state, action: PayloadAction<Reply>) => {
-      updateReply(action.payload);
+    setReply: (state, action: PayloadAction<Reply | null>) => {
+      const reply = action.payload;
+      if (reply) {
+        updateReply(reply);
+      }
       state.reply = action.payload;
     },
   },

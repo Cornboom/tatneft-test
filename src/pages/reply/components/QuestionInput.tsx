@@ -26,6 +26,7 @@ const QuestionInput = ({ question, is_completed, mark }: QuestionProps) => {
     const data = new FormData(e.target);
     const values = [...data.keys()];
 
+    // создание реплая
     const newReply = {
       ...replyData,
       answers: [
@@ -50,8 +51,9 @@ const QuestionInput = ({ question, is_completed, mark }: QuestionProps) => {
 
   const variantIds = question.variants.map((variant) => variant.id);
   const answers = (replyData?.answers|| []).filter((answer) => variantIds.includes(answer.question_variant_id)) || []
-  const isAnswered = answers.length > 0;
+  const isAnswered = replyData?.answers && answers.length > 0;
 
+  // функция перестановки вопросов
   const shuffle = (arr: any[]) => {
     return arr.sort(() => Math.random() - 0.5);
   };
@@ -68,10 +70,17 @@ const QuestionInput = ({ question, is_completed, mark }: QuestionProps) => {
           <RadioGroup value={(answers[0] || {}).question_variant_id}>
             {shuffledVariants.map((variant) => {
               const answers = (replyData?.answers || []).filter((answer) => answer.question_variant_id === variant.id) || []
-              const isChecked = answers.length > 0;
+              const isChecked = replyData?.answers && answers.length > 0;
               let correctProps = isAnswered && variant.is_correct && {
                 "style": {
-                  "color": "green",
+                  "background-color": "rgba(105, 215, 58, 0.5)",
+                  "padding-right": "12px",
+                }
+              }
+              let incorrentProps = isAnswered && !variant.is_correct && {
+                "style": {
+                  "background-color": "rgba(209, 54, 54, 0.5)",
+                  "padding-right": "12px",
                 }
               }
 
@@ -89,6 +98,7 @@ const QuestionInput = ({ question, is_completed, mark }: QuestionProps) => {
                         label={variant.text}
                         control={<Checkbox/>}
                         {...correctProps}
+                        {...incorrentProps}
                         {...extraProps}
                     />
                 )
@@ -102,6 +112,7 @@ const QuestionInput = ({ question, is_completed, mark }: QuestionProps) => {
                         label={variant.text}
                         control={<Radio/>}
                         {...correctProps}
+                        {...incorrentProps}
                     />
                 )
               }
